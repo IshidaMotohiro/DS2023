@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 1-index.ipynb
+- file: 2-requisite.ipynb
+- file: 3-anaconda.ipynb
+- file: 4-distribution.ipynb
+- file: 5-exploratory.ipynb
+- file: 6-test.ipynb
+- file: 7-machinelearning.ipynb
+- file: 8-modeling.ipynb
+- file: 9-bayes.ipynb
