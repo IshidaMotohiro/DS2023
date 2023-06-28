@@ -13,6 +13,8 @@ execute:
 
 # Define the name of the latex output file for PDF builds
 latex:
+  latex_engine              : 'xelatex' # (recommended for unicode), 'luatex', 'platex', 'uplatex'
+  use_jupyterbook_latex     : true      # use the jupyterbook-latex package for styling
   latex_documents:
     targetname: book.tex
 
@@ -41,3 +43,20 @@ html:
 #     # don't forget to list any other extensions you want enabled,
 #     # including those that are enabled by default!
 #     - amsmath
+#######################################################################################
+# Parse and render settings
+parse:
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+  # myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
